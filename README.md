@@ -48,7 +48,7 @@ docker compose logs -f ollama
 # List downloaded models
 docker exec ollama ollama list
 
-# Check running models
+# Check running models (Here you can see if model is running on GPU or not)
 docker exec ollama ollama ps
 
 # Container resource usage (CPU, memory)
