@@ -19,17 +19,7 @@ if %errorlevel%==0 (
     echo Docker is now running.
 )
 
-:: Start the containers
-docker compose up -d
+:: Check pull status of models
+docker compose logs -f ollama-init
 
-:: Wait for the web service to be ready
-echo Waiting for site to be ready...
-:wait_web
-curl -s -f -o nul http://localhost:3000
-if %errorlevel% neq 0 (
-    timeout /t 2 >nul
-    goto wait_web
-)
-
-:: Launch browser
-start "" chrome.exe --app=http://localhost:3000 --window-size=1024,768
+pause

@@ -20,6 +20,14 @@ pull_model() {
   fi
 }
 
+# nomic-embed-text
+# A small, efficient embedding model designed for generating high-quality text embeddings.
+pull_model "nomic-embed-text"
+
+# Llama 3.2 (1 Billion parameters)
+# The smallest Llama 3.2 model, optimized for maximum speed and minimal VRAM usage. Great for simple tasks
+pull_model "llama3.2:1b"
+
 # Llama 3.2 (3 Billion parameters)
 # Highly optimized for speed and maximum VRAM efficiency. Perfect for simple tasks or huge context windows, though less capable at deep logic.
 pull_model "llama3.2:3b"
