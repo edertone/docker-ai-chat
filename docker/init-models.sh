@@ -45,6 +45,11 @@ pull_model "deepseek-r1:8b"
 # Bleeding-edge generation from Google. Fills almost exactly 8GB of VRAM. Slower context processing but massive intelligence for its size.
 pull_model "gemma3:12b"
 
+# DeepSeek-Coder V2 (16 Billion parameters)
+# A powerful coding model designed for complex programming tasks. Requires ~9GB on disk and 12-16GB VRAM for optimal performance.
+# Excellent for code generation, debugging, and understanding complex codebases.
+# pull_model "deepseek-coder-v2:16b"
+
 # this model is very large and will only work with 16GB vram GPUs, so it's commented out by default. Uncomment if you want to pull it.
 # gpt-oss:20b
 # OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.
