@@ -13,7 +13,7 @@ All data is stored locally in the project folder:
 
 - `./data/ollama_data/` — downloaded models
 - `./data/open_webui_data/` — chat history and settings
-- `.data/searxng_data/` — search engine data
+- `./data/searxng_data/` — search engine data
 
 ## Prerequisites
 
@@ -24,23 +24,23 @@ All data is stored locally in the project folder:
 ## Usage
 
 ```bash
-# Start
-docker compose up -d
+# Start (Windows)
+win-start.bat
 
-# Stop
-docker compose down
+# Stop (Windows)
+win-stop.bat
 
-# Stop and delete all local data
-docker compose down ; rm -rf ollama_data open_webui_data
+# Update your local docker images to latest versions
+win-update-to-latest-version.bat
 ```
 
-Open **<http://localhost:3000>**
+Open **<http://localhost:3000/?web-search=true>**
 
 ## Monitoring
 
 ```bash
-# Model pull progress (first launch)
-docker compose logs -f ollama-init
+# Model pull progress on first launch (Windows)
+win-check-pulled-models.bat
 
 # Ollama server logs
 docker compose logs -f ollama
@@ -62,9 +62,7 @@ docker exec ollama nvidia-smi # from inside the container
 
 ## Pull Additional Models
 
-```bash
-docker exec ollama ollama pull <model-name>
-```
+Add them to init-models.sh and restart all containers
 
 Browse models at [ollama.com/library](https://ollama.com/library).
 
