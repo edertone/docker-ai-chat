@@ -52,7 +52,7 @@ services:
     environment:
       # Ollama Connection Settings
       - OLLAMA_BASE_URL=http://ollama:11434
-      - DEFAULT_MODELS=llama3.2:3b
+      - DEFAULT_MODELS=gemma4:e2b
       - TASK_MODEL=llama3.2:1b
       - WEBUI_AUTH=False      
       # Web Search Settings
