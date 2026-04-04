@@ -60,12 +60,14 @@ services:
       - WEB_SEARCH_ENGINE=searxng
       - SEARXNG_QUERY_URL=http://searxng:8080/search?q=<query>
       - WEB_SEARCH_RESULT_COUNT=5
-      - WEB_SEARCH_CONCURRENT_REQUESTS=5
+      - WEB_SEARCH_CONCURRENT_REQUESTS=7
       - WEB_LOADER_CONCURRENT_REQUESTS=5      
       # RAG & Intelligence Settings
       - RAG_SYSTEM_CONTEXT=True
       - CHUNK_SIZE=1000
       - CHUNK_OVERLAP=200
+      - ENABLE_RAG_WEB_SEARCH=True
+      - RAG_WEB_SEARCH_CONCURRENT_REQUESTS=7
       - RAG_EMBEDDING_ENGINE=ollama
       - RAG_EMBEDDING_MODEL=nomic-embed-text
     depends_on:
