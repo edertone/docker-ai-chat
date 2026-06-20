@@ -51,6 +51,11 @@ pull_model "gemma4:e4b"
 # this model is very large and will only work with 16GB vram GPUs, so it's commented out by default. Uncomment if you want to pull it.
 # pull_model "gpt-oss:20b"
 
+# Gemma 4 (12 Billion parameters)
+# Google's latest model, offering a great balance of intelligence and speed. Requires ~8GB on disk and 12GB VRAM for optimal performance.
+# this model is very large and will only work with 12GB vram GPUs, so it's commented out by default. Uncomment if you want to pull it.
+# pull_model "gemma4:12b"
+
 # Gemma 4 (31 Billion parameters)
 # Google's latest model, offering a great balance of intelligence and speed. Requires ~20GB on disk and 24GB VRAM for optimal performance.
 # this model is very large and will only work with 24GB vram GPUs, so it's commented out by default. Uncomment if you want to pull it.
