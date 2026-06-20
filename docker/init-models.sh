@@ -56,4 +56,9 @@ pull_model "gemma4:e4b"
 # this model is very large and will only work with 24GB vram GPUs, so it's commented out by default. Uncomment if you want to pull it.
 # pull_model "gemma4:31b"
 
+# Qwen 3.6 (35 Billion parameters)
+# A powerful model designed for complex reasoning and agentic tasks. Requires ~25GB on disk and 32GB VRAM for optimal performance.
+# this model is very large and will only work with 32GB vram GPUs, so it's commented out by default.
+# pull_model "qwen3.6:35b-a3b"
+
 echo "All models ready."
