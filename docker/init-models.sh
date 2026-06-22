@@ -41,15 +41,15 @@ pull_model "gemma4:e4b"
 # Excellent for complex logic, coding, and step-by-step problem solving.
 # pull_model "deepseek-r1:8b"
 
-# DeepSeek-Coder V2 (16 Billion parameters)
-# A powerful coding model designed for complex programming tasks. Requires ~9GB on disk and 12-16GB VRAM for optimal performance.
-# Excellent for code generation, debugging, and understanding complex codebases.
-# pull_model "deepseek-coder-v2:16b"
-
 # Gemma 4 (12 Billion parameters)
 # Google's latest model, offering a great balance of intelligence and speed. Requires ~8GB on disk and 12GB VRAM for optimal performance.
 # this model is very large and will only work with 12GB vram GPUs, so it's commented out by default. Uncomment if you want to pull it.
 # pull_model "gemma4:12b"
+
+# DeepSeek-Coder V2 (16 Billion parameters)
+# A powerful coding model designed for complex programming tasks. Requires ~9GB on disk and 12-16GB VRAM for optimal performance.
+# Excellent for code generation, debugging, and understanding complex codebases.
+# pull_model "deepseek-coder-v2:16b"
 
 # gpt-oss:20b (20 Billion parameters)
 # OpenAI’s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases.
