@@ -20,6 +20,8 @@ if %errorlevel%==0 (
 )
 
 :: Update
+docker compose down
 docker compose pull
+docker compose up -d
 
 pause
